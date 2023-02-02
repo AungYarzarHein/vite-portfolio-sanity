@@ -1,0 +1,135 @@
+
+.footerContainer {
+    width: 100%;
+    height: 300px;
+    /* background-color: rgb(74, 58, 58); */
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.footerLine {
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: black;
+}
+
+.footerSocialIcons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialIcon {
+    border-radius: 3px;
+    font-size: 2rem;
+    /* background-color: orange; */
+    padding: 1rem;
+    margin: 1rem 0.8rem 0rem 0.8rem;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+.footerSocialIcon:hover {
+    color: royalblue;
+}
+
+.footerCardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerCard {
+    min-width:300px ;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* background-color: red; */
+    border-radius: 3px;
+    padding: 1rem ;
+    /* border: 1px solid black; */
+} 
+
+.footerAddress {
+    font-size: .9rem;
+}
+
+.footerHeadLine {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5rem;
+    /* background-color: red; */
+}
+
+.footerHeadLine .footerHeadLineTitle {
+    font-size: 1rem;
+
+}
+
+.footerCardHeader {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footerCard ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* background-color: green; */
+}
+
+.footerCard li {
+    margin-top: 3px;
+    font-size: .9rem;
+}
+
+.footerCard li em {
+    color: royalblue;
+}
+
+.footerIcon {
+    margin-right: 5px;
+    color:royalblue;
+}
+
+.footerCopyRight {
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    font-size: .8rem;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.footerCard img {
+    width: 10%;
+    margin-left: 1rem;
+    border-radius: 50%;
+}
+
+.fbtn {
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+.fbtn:hover {
+    border-bottom: 1px solid rgb(110, 123, 195);
+}
+
+@media screen and (max-width:480px){
+    .footerSocialIcon {
+        margin: .5rem;
+        padding: .5rem;
+    }
+}

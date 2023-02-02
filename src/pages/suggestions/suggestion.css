@@ -1,0 +1,98 @@
+
+.contactContainer {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.contactHeaderTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    transform: scale(0);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: royalblue;
+}
+
+.inputContainer {
+    width: 100%;
+    /* padding: 1rem; */
+    /* background-color: goldenrod; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.inputItem {
+    min-width: 45%;
+    display: flex;
+    flex: 1;
+    /* background-color: brown; */
+    padding: 1rem;
+    flex-direction: column;
+    gap: 5px;
+}
+.inputItem label {
+     font-size: 1.1rem;
+     font-weight: 700;
+}
+
+.inputIcon {
+    margin-right: .5rem;
+}
+
+.inputItem input {
+   line-height: 1;
+   font-size: 1rem;
+   padding: .7rem .8rem .7rem .5rem;
+   border-radius: 3px;
+   border: 1px solid rgb(79, 79, 79);
+   background-color: transparent;
+   color: #fff;
+}
+
+.inputItem input:focus {
+    /* border: none; */
+   outline: 2px solid rgb(70, 70, 70);
+}
+
+.inputItem textarea {
+    background-color: transparent;
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem;
+    border: 1px solid rgb(72, 71, 71);
+    border-radius: 3px;
+    
+}
+
+.inputItem textarea:focus {
+    outline: 1px solid black;
+    /* border: none; */
+}
+
+.submitItem {
+    width: 100%;
+    text-align: right;
+    padding: 1rem;
+}
+
+.inputBtn {
+    width: 120px;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    background-color: royalblue;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid rgb(156, 134, 255);
+}
+
+@media screen and (max-width:480px) {
+    .contactHeaderTitle {
+        font-size: 1.6rem;
+    }
+}

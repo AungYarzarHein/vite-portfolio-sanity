@@ -1,0 +1,128 @@
+.projectsContainer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    /* background-color: aquamarine; */
+}
+
+.projectTypeHeader {
+    width: 100%;
+    padding: 1rem 0;
+    /* background-color: gold; */
+}
+
+.projectHeader {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: royalblue;
+    transition: all 1s linear;
+}
+
+.projectTypeBtns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.projectTypeBtn {
+    width: 120px;
+    padding: .5rem;
+    text-align: center;
+    border: 1px solid rgb(72, 72, 72);
+    border-radius: 3px;
+    transition: all .6s linear;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.projectCardBtn {
+    width: 120px;
+    padding: .5rem;
+    text-align: center;
+    border: 1px solid rgb(72, 72, 72);
+    border-radius: 3px;
+    transition: all .6s linear;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.projectTypeBtn:focus {
+    background-color: royalblue;
+}
+.projectTypeBtn:hover , .projectCardBtn:hover {
+    background-color: black;
+}
+
+.allProjectContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.loading {
+    width: 100%;
+    text-align: center;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 45%;
+    /* background-color: cadetblue; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(74, 74, 74);
+    padding: 1rem;
+    border-radius: 3px;
+    opacity: 0;
+
+}
+
+.projectCardHeader {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.projectImageContainer {
+    width: 100%;
+    min-height: 100px;
+    background-color: goldenrod;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+.imager { 
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.projectCardInfo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.projectCardInfo span {
+    padding-left: 2rem;
+    font-size: 1rem;
+    color: black;
+}
+
+@media screen and (max-width:480px) {
+    .projectHeader {
+        text-align: center;
+    }
+}

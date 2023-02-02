@@ -1,0 +1,249 @@
+.homeContainer {
+    /* background-color: rgb(0, 0, 0); */
+    min-height: 100vh;
+    padding: 3rem 1rem 3rem 1rem;
+    text-align: center;
+}
+
+.homeTitle {
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    color: royalblue;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    border-radius: 3px;
+}
+
+.profileIconContainer {
+    display: flex;
+    flex: 1;
+    /* background-color: goldenrod; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profileIconRight {
+    display: flex;
+    width: 50%;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.profileIconCenter {
+    display: flex;
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+}
+
+.profileIconLeft {
+    display: flex;
+    width: 50%;
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+
+.profileIconCenter , .profileIconLeft , .profileIconRight {
+    margin: 2rem 0;
+}
+
+.homeProfileImage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: rgb(39, 197, 218); */
+    opacity: 0;
+}
+
+.homeProfileImage img {
+    width: 55%;
+    height: auto;
+}
+
+.homeLanguage {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    /* height: 50px; */
+    /* background-color: chocolate; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    opacity: 0;
+}
+
+.text1 {
+    color: rgb(107, 141, 242);
+}
+
+.text2 {
+    color: rgb(81, 201, 252);
+}
+.text3 {
+    color: rgb(255, 73, 73);
+}
+
+.languageTitle {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.languageTitleOne {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.homeLanguageCard {
+    max-width: 120px;
+    min-height: 50px;
+    display: flex;
+    flex: 1;
+    border-radius: 3px;
+    background-color: rgb(39, 41, 40);
+    /* transition: all linear; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.homeBtns {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    gap: .5rem;
+    opacity: 0;
+    /* background-color: aquamarine; */
+}
+
+.homeBtn {
+    display: inline-block;
+    width: 120px;
+    padding: .4rem 1rem;
+    border-radius: 3px;
+    border: 1px solid rgb(85, 85, 85);
+    background-color: rgb(0, 46, 98);
+    transition: all .6s linear;
+    cursor: pointer;
+    /* margin-right: 5px; */
+}
+
+.homeBtnTran {
+    display: inline-block;
+    width: 120px;
+    padding: .4rem 1rem;
+    border-radius: 3px;
+    border: 1px solid rgb(85, 85, 85);
+    transition: all .6s linear;
+    cursor: pointer;
+    background-color: transparent;
+    /* margin-left: 5px; */
+}
+
+.homeBtn:hover , .homeBtnTran:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(0, 66, 66);
+    margin: 2rem auto;
+}
+
+.homeProjectInfoContainer {
+    width: 100%;
+    padding: 1rem .5rem 2rem .5rem;
+    opacity: 0;
+}
+
+.homeProjectInfoTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.homeProjectsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    opacity: 0;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+.homeProjectCard {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 100px;
+    min-width: 300px;
+    /* background-color: rebeccapurple; */
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 3px;
+    padding: 1rem 1.2rem;
+    transition: all .5s linear;
+}
+
+.homeProjectCard:hover {
+    background-color: black;
+}
+
+.description {
+    width: 100%;
+    text-align: left;
+}
+
+.homeProjectCard h3 {
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px) {
+    .homeTitle {
+        font-size: 1.4rem;
+        padding: .5rem .8rem;
+        background-color: transparent;
+    }
+    .homeLanguage {
+        gap: .2rem;
+    }
+    .homeLanguageCard {
+        font-size: .75rem;
+        /* padding-inline: 1rem; */
+        min-height: 40px;
+    }
+    .languageTitle {
+        font-size: 1.6rem;
+    }
+    .languageTitleOne {
+        font-size: .9rem;
+    }
+
+    .profileIconCenter , .profileIconLeft , .profileIconRight {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .homeProfileImage img {
+        width: 70%;
+    }
+}

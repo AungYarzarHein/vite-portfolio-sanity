@@ -1,0 +1,122 @@
+
+
+.headerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:1rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(77, 75, 75);
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.headerTitle {
+    font-size: 2rem;
+    /* letter-spacing: .4rem; */
+    font-weight: 900;
+    cursor: pointer;
+    color: royalblue;
+}
+
+.menuBarIcon {
+    /* background-color: green; */
+    text-align: center;
+}
+
+.menuIcon {
+    /* margin-top: .5rem; */
+    font-size: 1.5rem;
+    color: rgb(235, 216, 255);
+}
+
+.headerMenuBar {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.headerMenuBtn {
+    padding: .3rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    /* border-radius: 3px; */
+    cursor: pointer;
+    transition: all .3s linear;
+    border-bottom: 1px solid transparent;
+}
+
+.headerMenuBtn:hover {
+    color: #fff;
+    background-color: rgb(66, 64, 64);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.mobileMenuBar,.menuBarIcon {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+    .headerContainer {
+        padding: 0 1rem;
+    }
+    .headerTitle {
+        display: flex;
+        flex: 1;
+        font-size: 1.5rem;
+        /* color: red; */
+    }
+    
+    .headerMenuBar {
+        display: none;
+    }
+    .menuBarIcon {
+        display: block;
+        padding: 1rem;
+    }
+    .mobileMenuBar {
+        /* display: block; */
+        position: fixed;
+        width: 60%;
+        top: 0;
+        right: 0;
+        height: 100dvh;
+        background-color: rgb(40, 41, 40);
+        padding: 1rem;
+        transition: all 1s linear;
+        z-index: 50;
+    }
+
+    .mobileCloseBtn {
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+    }
+    .show {
+        display: block;
+    }
+    .mobileMenuIcon {
+        margin-top: 9px;
+        padding-right: 0.7rem;
+    }
+    .mobileHeaderMenuBtn {
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        line-height: 2;
+        padding: .5rem;
+        border-radius: 5px;
+        transition: all 1s linear;
+    }
+
+    .mobileHeaderMenuBtn:hover {
+        background-color: rgb(0, 0, 0);
+    }
+}
