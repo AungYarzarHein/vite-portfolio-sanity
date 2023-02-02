@@ -5,10 +5,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0;
+    margin: 0;
     padding:1rem;
     flex-wrap: wrap;
+    box-sizing: border-box;
     border-bottom: 1px solid rgb(77, 75, 75);
-    /* background-color: rgb(0, 0, 0); */
+    /* background-color: rgb(255, 13, 13); */
 }
 
 .headerTitle {
@@ -17,11 +20,13 @@
     font-weight: 900;
     cursor: pointer;
     color: royalblue;
+    margin: 0;
+    /* background-color: chocolate; */
 }
 
 .menuBarIcon {
     /* background-color: green; */
-    text-align: center;
+    text-align: right;
 }
 
 .menuIcon {
@@ -62,7 +67,7 @@
 
 @media screen and (max-width:680px) {
     .headerContainer {
-        padding: 0 1rem;
+        padding: 0 ;
     }
     .headerTitle {
         display: flex;

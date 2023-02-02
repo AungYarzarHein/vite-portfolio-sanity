@@ -125,4 +125,7 @@
     .projectHeader {
         text-align: center;
     }
+    .projectCard {
+        padding-inline: 1rem;
+    }
 }
