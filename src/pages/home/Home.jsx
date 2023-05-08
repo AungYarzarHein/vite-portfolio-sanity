@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import "./home.css";
 import {easeInOut, motion} from "framer-motion";
-import profileImage from "../../assets/cani.svg";
+import profileImage from "../../assets/meme.png";
 import htmlIcon from "../../assets/html.svg"
 import cssIcon from "../../assets/css.svg"
 import JavascriptIcon from "../../assets/javascript.svg"
