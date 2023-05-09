@@ -19,7 +19,7 @@
     /* letter-spacing: .4rem; */
     font-weight: 900;
     cursor: pointer;
-    color: royalblue;
+    color: rgb(255, 255, 255);
     margin: 0;
     /* background-color: chocolate; */
 }
@@ -32,7 +32,7 @@
 .menuIcon {
     /* margin-top: .5rem; */
     font-size: 1.5rem;
-    color: rgb(235, 216, 255);
+    color: rgb(255, 255, 255);
 }
 
 .headerMenuBar {
@@ -72,7 +72,9 @@
     .headerTitle {
         display: flex;
         flex: 1;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        justify-content: flex-start;
+        padding-left: 1rem;
         /* color: red; */
     }
     
@@ -82,6 +84,10 @@
     .menuBarIcon {
         display: block;
         padding: 1rem;
+    }
+
+    .menuIcon {
+        font-size: 1.3rem;
     }
     .mobileMenuBar {
         /* display: block; */
